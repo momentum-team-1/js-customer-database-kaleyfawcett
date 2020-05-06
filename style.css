@@ -1,4 +1,22 @@
 body {
     background-color: white;
+    
+}
+
+.customers {
     list-style-type: none; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+   
+}
+
+img {
+    
+    border-bottom-left-radius: 75%;
+    border-top-right-radius: 75%;
+    border-bottom-right-radius: 25% ;
+    border-top-left-radius: 25%;
+      
 }
