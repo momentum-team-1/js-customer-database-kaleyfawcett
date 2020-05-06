@@ -2,6 +2,8 @@
 function renderPageContent() {
     let targetElement = document.querySelector(".customers")
 
+
+
     for (let person of customers) {
         let listPersonElement = document.createElement("div")
 
@@ -23,37 +25,36 @@ function createPictureElement (picture) {
 }
 
 function createNameElement (name) {
-    let nameElement = document.createElement ("div")
+    let nameElement = document.createElement ("h2")
     nameElement.innerText = `${name}`
     return nameElement
     
 }
 
 function createEmailElement (email) {
-    let emailElement = document.createElement ("div")
+    let emailElement = document.createElement ("section")
     emailElement.innerText = `${email}`
     return emailElement 
 }
 
 
 function createAddressElement (location) {
-    let addressElement = document.createElement ("div")
+    let addressElement = document.createElement ("p")
     addressElement.innerText = `${location}`
     return addressElement 
 }
 
 function createBirthDateElement (dob) {
     let birthDateElement = document.createElement ("div")
-    birthDateElement.innerText = `DOB: ${dob}`
+    birthDateElement.innerText = ("DOB: " + moment(dob).format("MMM D, YYYY")) 
     return birthDateElement
 }
 
 function createCustomerDate (registered) {
     let customerDateElement = document.createElement ("div")
-    customerDateElement.innerText = `Customer since: ${registered}`
+    customerDateElement.innerText = ("Customer since: " + moment(registered).format("MMM D, YYYY"))
     return customerDateElement 
 }
-
 
 
 renderPageContent ()

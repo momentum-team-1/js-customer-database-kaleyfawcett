@@ -1,6 +1,16 @@
 body {
     background-color: white;
+
     
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2%;
+}
+
+h2 {
+    font-weight: bold;
 }
 
 .customers {
@@ -8,8 +18,25 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-basis: 30%;
     text-align: center;
+    font-family: "Open Sans";
+    font-size: 13px;
+    text-transform: capitalize;
+    padding: 4%;
+
+    
    
+}
+
+section {
+  color: grey;
+  text-transform: lowercase;
+}
+
+p {
+    max-width: 225px;
+
 }
 
 img {
